@@ -16,8 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var timer: Timer?
   var update = false
   
-  let homeURL = URL(string: "https://github.com/doingy/apppath/tree/master")!
-  let helpURL = URL(string: "https://github.com/doingy/apppath/issues")!
+  let homeURL = URL(string: "https://github.com/doingy/path")!
+  let helpURL = URL(string: "https://github.com/doingy/path/issues")!
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     statusItem.title = "Path"
@@ -111,7 +111,7 @@ extension AppDelegate {
   
   /// 检查新版本
   func checkUpdate() {
-    let request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/doingy/apppath/master/version.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)
+    let request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/doingy/path/master/version.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)
     let task = URLSession.shared.dataTask(with: request) { (data, resp, error) in
       guard let status = (resp as? HTTPURLResponse)?.statusCode, status == 200, data != nil, let version = try? JSONDecoder().decode(Version.self, from: data!) else {
         if error != nil {
