@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem.title = "Path"
     statusItem.action = #selector(show)
     
+    // 每5分钟刷新一次
     timer = Timer.scheduledTimer(timeInterval: 60*5, target: self, selector: #selector(show), userInfo: nil, repeats: true)
     perform(#selector(show), with: nil, afterDelay: 0.5)
     
@@ -36,6 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 }
 
+// MARK: -
 extension AppDelegate {
   
   /// 构造目录，显示目录
@@ -111,6 +113,7 @@ extension AppDelegate {
   
   /// 检查新版本
   func checkUpdate() {
+    // TODO: 暂时不可用
     let request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/doingy/path/master/version.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)
     let task = URLSession.shared.dataTask(with: request) { (data, resp, error) in
       guard let status = (resp as? HTTPURLResponse)?.statusCode, status == 200, data != nil, let version = try? JSONDecoder().decode(Version.self, from: data!) else {
