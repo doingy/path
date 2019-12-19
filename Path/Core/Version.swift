@@ -1,6 +1,6 @@
 //
 //  Version.swift
-//  AppPath
+//  Path
 //
 //  Created by 杨冬青 on 2017/12/12.
 //  Copyright © 2017年 杨冬青. All rights reserved.
@@ -16,7 +16,7 @@ struct Version: Codable {
 
 extension Version {
   func sign() -> Bool {
-    guard let sign = String(format: "crc,version:%@,build:%@,apppath", version, build).sha256() else {
+    guard let sign = String(format: "crc,version:%@,build:%@,path", version, build).sha256() else {
       return false
     }
     

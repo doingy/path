@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AppPath
+//  Path
 //
 //  Created by 杨冬青 on 2017/12/7.
 //  Copyright © 2017年 杨冬青. All rights reserved.
@@ -23,9 +23,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem.title = "Path"
     statusItem.action = #selector(show)
     
+    perform(#selector(show), with: nil, afterDelay: 0.5)
     // 每5分钟刷新一次
     timer = Timer.scheduledTimer(timeInterval: 60*5, target: self, selector: #selector(show), userInfo: nil, repeats: true)
-    perform(#selector(show), with: nil, afterDelay: 0.5)
     
     // 检查新版本
     checkUpdate()
@@ -47,7 +47,7 @@ extension AppDelegate {
     statusItem.menu = menu
     
     // 关于
-    let about = NSMenuItem(title: "About App Path", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
+    let about = NSMenuItem(title: "About Path", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
     menu.addItem(about)
     
     if update {
@@ -66,7 +66,7 @@ extension AppDelegate {
     help.representedObject = helpURL
     menu.addItem(help)
     // 退出
-    let quit = NSMenuItem(title: "Quit App Path", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+    let quit = NSMenuItem(title: "Quit Path", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
     menu.addItem(quit)
   }
   

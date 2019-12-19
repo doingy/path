@@ -47,12 +47,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07366AE91FD9099A00616E8F /* AppPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07366AE91FD9099A00616E8F /* Path.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Path.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07366AEC1FD9099B00616E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07366AF01FD9099B00616E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07366AF31FD9099B00616E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07366AF51FD9099B00616E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07366AF61FD9099B00616E8F /* AppPath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppPath.entitlements; sourceTree = "<group>"; };
+		07366AF61FD9099B00616E8F /* Path.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Path.entitlements; sourceTree = "<group>"; };
 		07366AFD1FD90A3500616E8F /* APLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APLog.swift; sourceTree = "<group>"; };
 		07366B001FD90A6000616E8F /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/Mac/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
 		07366B011FD90A6100616E8F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		07366B031FD90A6100616E8F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		07366B151FD90A8E00616E8F /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		07366B161FD90A8E00616E8F /* bootstrap.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bootstrap.sh; sourceTree = "<group>"; };
-		076C83011FDF80CA007DBF8F /* AppPath-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPath-Bridging-Header.h"; sourceTree = "<group>"; };
+		076C83011FDF80CA007DBF8F /* Path-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Path-Bridging-Header.h"; sourceTree = "<group>"; };
 		076C83071FDF812A007DBF8F /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		076C83091FDF8B6D007DBF8F /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		076E51DC1FDA775C007E19C2 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				07366B151FD90A8E00616E8F /* Cartfile */,
 				07366B161FD90A8E00616E8F /* bootstrap.sh */,
 				07B3D2BC23A8A08F00095BD8 /* README.md */,
-				07366AEB1FD9099A00616E8F /* AppPath */,
+				07366AEB1FD9099A00616E8F /* Path */,
 				07366AEA1FD9099A00616E8F /* Products */,
 				07366AFF1FD90A6000616E8F /* Frameworks */,
 			);
@@ -103,24 +103,24 @@
 		07366AEA1FD9099A00616E8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07366AE91FD9099A00616E8F /* AppPath.app */,
+				07366AE91FD9099A00616E8F /* Path.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07366AEB1FD9099A00616E8F /* AppPath */ = {
+		07366AEB1FD9099A00616E8F /* Path */ = {
 			isa = PBXGroup;
 			children = (
 				076E51DE1FDA7952007E19C2 /* Core */,
 				07366AFC1FD90A2700616E8F /* Util */,
 				07366AEC1FD9099B00616E8F /* AppDelegate.swift */,
-				076C83011FDF80CA007DBF8F /* AppPath-Bridging-Header.h */,
+				076C83011FDF80CA007DBF8F /* Path-Bridging-Header.h */,
 				07366AF21FD9099B00616E8F /* Main.storyboard */,
 				07366AF01FD9099B00616E8F /* Assets.xcassets */,
 				07366AF51FD9099B00616E8F /* Info.plist */,
-				07366AF61FD9099B00616E8F /* AppPath.entitlements */,
+				07366AF61FD9099B00616E8F /* Path.entitlements */,
 			);
-			path = AppPath;
+			path = Path;
 			sourceTree = "<group>";
 		};
 		07366AFC1FD90A2700616E8F /* Util */ = {
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07366AE81FD9099A00616E8F /* AppPath */ = {
+		07366AE81FD9099A00616E8F /* Path */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07366AF91FD9099B00616E8F /* Build configuration list for PBXNativeTarget "AppPath" */;
+			buildConfigurationList = 07366AF91FD9099B00616E8F /* Build configuration list for PBXNativeTarget "Path" */;
 			buildPhases = (
 				07366AE51FD9099A00616E8F /* Sources */,
 				07366AE61FD9099A00616E8F /* Frameworks */,
@@ -172,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = AppPath;
+			name = Path;
 			productName = AppPath;
-			productReference = 07366AE91FD9099A00616E8F /* AppPath.app */;
+			productReference = 07366AE91FD9099A00616E8F /* Path.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07366AE41FD9099A00616E8F /* Build configuration list for PBXProject "AppPath" */;
+			buildConfigurationList = 07366AE41FD9099A00616E8F /* Build configuration list for PBXProject "Path" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +212,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07366AE81FD9099A00616E8F /* AppPath */,
+				07366AE81FD9099A00616E8F /* Path */,
 			);
 		};
 /* End PBXProject section */
@@ -381,11 +381,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = AppPath/Info.plist;
+				INFOPLIST_FILE = Path/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangdq.AppPath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangdq.Path;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AppPath/AppPath-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Path/Path-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -403,11 +403,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = AppPath/Info.plist;
+				INFOPLIST_FILE = Path/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangdq.AppPath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangdq.Path;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AppPath/AppPath-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Path/Path-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -415,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07366AE41FD9099A00616E8F /* Build configuration list for PBXProject "AppPath" */ = {
+		07366AE41FD9099A00616E8F /* Build configuration list for PBXProject "Path" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07366AF71FD9099B00616E8F /* Debug */,
@@ -424,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07366AF91FD9099B00616E8F /* Build configuration list for PBXNativeTarget "AppPath" */ = {
+		07366AF91FD9099B00616E8F /* Build configuration list for PBXNativeTarget "Path" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07366AFA1FD9099B00616E8F /* Debug */,
